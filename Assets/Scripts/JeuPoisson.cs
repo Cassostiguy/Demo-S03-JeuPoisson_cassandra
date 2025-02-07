@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+//ajout pour redemarrer
+using UnityEngine.SceneManagement;
 
 public class JeuPoisson : MonoBehaviour
 {
@@ -40,4 +42,7 @@ public class JeuPoisson : MonoBehaviour
         }
     }
 
+public void Redemarrer(){
+    SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+}
 }
